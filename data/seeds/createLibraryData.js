@@ -10,9 +10,9 @@ exports.seed = async function (knex) {
 
   // seed dummy books
   const booksWithAuthorIds = data.books.map((book) => {
-    const author_id = authors.find((name) => book.author)?.id;
+    const authorId = authors.find(({ name }) => book.author == name)?.id;
     delete book.author;
-    return { ...book, author_id };
+    return { ...book, authorId };
   });
   await knex('books').insert(booksWithAuthorIds).onConflict().ignore();
 };

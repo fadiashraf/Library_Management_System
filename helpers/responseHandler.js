@@ -1,4 +1,3 @@
-const { DBError } = require('objection');
 const convertSnakeToCamelCase = require('./convertToCamelCase');
 
 class ResponseHandler {

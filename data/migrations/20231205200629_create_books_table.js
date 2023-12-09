@@ -9,10 +9,9 @@ exports.up = function (knex) {
     table.string('ISBN').notNullable().unique();
     table.string('language').nullable();
     table.integer('pages').nullable().unsigned();
-    table.integer('year').nullable();
-    table.integer('available_quantity').defaultTo(0);
-    table.string('shelf_location').nullable().defaultTo('NA');
-    table.integer('author_id').unsigned().references('id').inTable('authors').onDelete('SET NULL').onUpdate('CASCADE');
+    table.integer('availableQuantity').defaultTo(0);
+    table.string('shelfLocation').nullable().defaultTo('NA');
+    table.integer('authorId').unsigned().references('id').inTable('authors').onDelete('SET NULL').onUpdate('CASCADE');
     table.index('title', 'idx_title', 'FULLTEXT');
     table.timestamps(true, true);
   });

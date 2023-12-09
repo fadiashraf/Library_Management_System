@@ -13,7 +13,6 @@ const ApiError = require('./helpers/ApiError');
 const config = require('./config/config.js');
 const app = express();
 
-
 app.use(express.static(path.join(__dirname, 'public')));
 if (config.env !== 'test') {
   app.use(morgan.successHandler);
@@ -27,7 +26,7 @@ app.use(helmet());
 app.use(express.json());
 
 // parse urlencoded request body
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 // enable cors
 app.use(cors());

@@ -1,19 +1,35 @@
 const httpStatus = require('http-status');
-const ApiError = require('../../helpers/ApiError')
-const authorRepo = require('../../repository/authors.repo');
+const ApiError = require('../../helpers/ApiError');
+const authorRepo = require('../../repository/author.repo');
+const pager = require('../../helpers/pager');
 
-class AuthorService {
-  createOne({ name }) {
-    return authorRepo.createOne({ name });
-  }
+const createOne = async ({ name }) => {
+  const author = await authorRepo.getOneByName(name);
+  if (author) throw new ApiError(httpStatus.CONFLICT, `this Author already existed with id = ${author.id}`);
+  return authorRepo.createOne({ name });
+};
 
-  getOneById(id) {
-    return authorRepo.getOneById(id);
-  }
+const getOneById = async (id) => {
+  const author = await authorRepo.getOneById(id);
+  if (!author) throw new ApiError(httpStatus.NOT_FOUND, 'NOT FOUND');
+  return author;
+};
 
-  getAuthors({ filter, page, limit }) {
-    return authorRepo.getAllBy({ filterObject: filter, page, limit });
-  }
-}
+const updateOneById = async (id, updates) => {
+  const author = await authorRepo.getOneById(id);
+  if (!author) throw new ApiError(httpStatus.NOT_FOUND, 'NOT FOUND');
+  return authorRepo.updateOne(id, updates);
+};
 
-module.exports = new AuthorService();
+const getAuthors = async ({ name, page, limit }) => {
+  const { results: authors, total } = await authorRepo.getByName({ name, page, limit });
+  return { authors, ...pager(total, page, limit) };
+};
+
+const getAuthorsIdsByName = async (name) => {
+  const authors = await authorRepo.getAuthorsIdsByName(name);
+  if (!authors?.length) return [];
+  return authors.map(({ id }) => id);
+};
+
+module.exports = { getAuthorsIdsByName, getAuthors, updateOneById, getOneById, createOne };

@@ -252,901 +252,901 @@
       "author": "Chinua Achebe",
       "pages": 209,
       "title": "Things Fall Apart",
-      "year": 1958,
       "language": "English",
-      "shelf_location": "J32",
-      "ISBN": "978159825146227"
+      "shelfLocation": "J32",
+      "ISBN": "978159825146227",
+      "availableQuantity": 10
     },
     {
       "author": "Hans Christian Andersen",
       "pages": 784,
       "title": "Fairy tales",
-      "year": 1836,
       "language": "Danish",
-      "shelf_location": "F49",
-      "ISBN": "978233450140036"
+      "shelfLocation": "F49",
+      "ISBN": "978233450140036",
+      "availableQuantity": 10
     },
     {
       "author": "Dante Alighieri",
       "pages": 928,
       "title": "The Divine Comedy",
-      "year": 1315,
       "language": "Italian",
-      "shelf_location": "G33",
-      "ISBN": "978350011621928"
+      "shelfLocation": "G33",
+      "ISBN": "978350011621928",
+      "availableQuantity": 10
     },
     {
       "author": "Unknown",
       "pages": 160,
       "title": "The Epic Of Gilgamesh",
-      "year": -1700,
       "language": "Akkadian",
-      "shelf_location": "E26",
-      "ISBN": "978150164278297"
+      "shelfLocation": "E26",
+      "ISBN": "978150164278297",
+      "availableQuantity": 10
     },
     {
       "author": "Unknown",
       "pages": 176,
       "title": "The Book Of Job",
-      "year": -600,
       "language": "Hebrew",
-      "shelf_location": "O25",
-      "ISBN": "978571522465739"
+      "shelfLocation": "O25",
+      "ISBN": "978571522465739",
+      "availableQuantity": 10
     },
     {
       "author": "Unknown",
       "pages": 288,
       "title": "One Thousand and One Nights",
-      "year": 1200,
       "language": "Arabic",
-      "shelf_location": "R11",
-      "ISBN": "978592139141474"
+      "shelfLocation": "R11",
+      "ISBN": "978592139141474",
+      "availableQuantity": 10
     },
     {
       "author": "Unknown",
       "pages": 384,
       "title": "Njál's Saga",
-      "year": 1350,
       "language": "Old Norse",
-      "shelf_location": "S15",
-      "ISBN": "978422010947866"
+      "shelfLocation": "S15",
+      "ISBN": "978422010947866",
+      "availableQuantity": 10
     },
     {
       "author": "Jane Austen",
       "pages": 226,
       "title": "Pride and Prejudice",
-      "year": 1813,
       "language": "English",
-      "shelf_location": "G7",
-      "ISBN": "978577921677577"
+      "shelfLocation": "G7",
+      "ISBN": "978577921677577",
+      "availableQuantity": 10
     },
     {
       "author": "Honoré de Balzac",
       "pages": 443,
       "title": "Le Père Goriot",
-      "year": 1835,
       "language": "French",
-      "shelf_location": "J3",
-      "ISBN": "978530162867280"
+      "shelfLocation": "J3",
+      "ISBN": "978530162867280",
+      "availableQuantity": 10
     },
     {
       "author": "Samuel Beckett",
       "pages": 256,
       "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
-      "year": 1952,
       "language": "French, English",
-      "shelf_location": "R12",
-      "ISBN": "978766244627715"
+      "shelfLocation": "R12",
+      "ISBN": "978766244627715",
+      "availableQuantity": 10
     },
     {
       "author": "Giovanni Boccaccio",
       "pages": 1024,
       "title": "The Decameron",
-      "year": 1351,
       "language": "Italian",
-      "shelf_location": "I38",
-      "ISBN": "978831623386339"
+      "shelfLocation": "I38",
+      "ISBN": "978831623386339",
+      "availableQuantity": 10
     },
     {
       "author": "Jorge Luis Borges",
       "pages": 224,
       "title": "Ficciones",
-      "year": 1965,
       "language": "Spanish",
-      "shelf_location": "K30",
-      "ISBN": "978572365463848"
+      "shelfLocation": "K30",
+      "ISBN": "978572365463848",
+      "availableQuantity": 10
     },
     {
       "author": "Emily Brontë",
       "pages": 342,
       "title": "Wuthering Heights",
-      "year": 1847,
       "language": "English",
-      "shelf_location": "A12",
-      "ISBN": "978639577018956"
+      "shelfLocation": "A12",
+      "ISBN": "978639577018956",
+      "availableQuantity": 10
     },
     {
       "author": "Albert Camus",
       "pages": 185,
       "title": "The Stranger",
-      "year": 1942,
       "language": "French",
-      "shelf_location": "N49",
-      "ISBN": "978636464545420"
+      "shelfLocation": "N49",
+      "ISBN": "978636464545420",
+      "availableQuantity": 10
     },
     {
       "author": "Paul Celan",
       "pages": 320,
       "title": "Poems",
-      "year": 1952,
       "language": "German",
-      "shelf_location": "S27",
-      "ISBN": "978269132527380"
+      "shelfLocation": "S27",
+      "ISBN": "978269132527380",
+      "availableQuantity": 10
     },
     {
       "author": "Louis-Ferdinand Céline",
       "pages": 505,
       "title": "Journey to the End of the Night",
-      "year": 1932,
       "language": "French",
-      "shelf_location": "I37",
-      "ISBN": "978621256050188"
+      "shelfLocation": "I37",
+      "ISBN": "978621256050188",
+      "availableQuantity": 10
     },
     {
       "author": "Miguel de Cervantes",
       "pages": 1056,
       "title": "Don Quijote De La Mancha",
-      "year": 1610,
       "language": "Spanish",
-      "shelf_location": "O1",
-      "ISBN": "978323527280819"
+      "shelfLocation": "O1",
+      "ISBN": "978323527280819",
+      "availableQuantity": 10
     },
     {
       "author": "Geoffrey Chaucer",
       "pages": 544,
       "title": "The Canterbury Tales",
-      "year": 1450,
       "language": "English",
-      "shelf_location": "Q3",
-      "ISBN": "978840696228172"
+      "shelfLocation": "Q3",
+      "ISBN": "978840696228172",
+      "availableQuantity": 10
     },
     {
       "author": "Anton Chekhov",
       "pages": 194,
       "title": "Stories",
-      "year": 1886,
       "language": "Russian",
-      "shelf_location": "I37",
-      "ISBN": "978265521737797"
+      "shelfLocation": "I37",
+      "ISBN": "978265521737797",
+      "availableQuantity": 10
     },
     {
       "author": "Joseph Conrad",
       "pages": 320,
       "title": "Nostromo",
-      "year": 1904,
       "language": "English",
-      "shelf_location": "F2",
-      "ISBN": "978632915879964"
+      "shelfLocation": "F2",
+      "ISBN": "978632915879964",
+      "availableQuantity": 10
     },
     {
       "author": "Charles Dickens",
       "pages": 194,
       "title": "Great Expectations",
-      "year": 1861,
       "language": "English",
-      "shelf_location": "S29",
-      "ISBN": "978149039838392"
+      "shelfLocation": "S29",
+      "ISBN": "978149039838392",
+      "availableQuantity": 10
     },
     {
       "author": "Denis Diderot",
       "pages": 596,
       "title": "Jacques the Fatalist",
-      "year": 1796,
       "language": "French",
-      "shelf_location": "C18",
-      "ISBN": "978027144492987"
+      "shelfLocation": "C18",
+      "ISBN": "978027144492987",
+      "availableQuantity": 10
     },
     {
       "author": "Alfred Döblin",
       "pages": 600,
       "title": "Berlin Alexanderplatz",
-      "year": 1929,
       "language": "German",
-      "shelf_location": "K27",
-      "ISBN": "978308788709272"
+      "shelfLocation": "K27",
+      "ISBN": "978308788709272",
+      "availableQuantity": 10
     },
     {
       "author": "Fyodor Dostoevsky",
       "pages": 551,
       "title": "Crime and Punishment",
-      "year": 1866,
       "language": "Russian",
-      "shelf_location": "B24",
-      "ISBN": "978018449104054"
+      "shelfLocation": "B24",
+      "ISBN": "978018449104054",
+      "availableQuantity": 10
     },
     {
       "author": "Fyodor Dostoevsky",
       "pages": 656,
       "title": "The Idiot",
-      "year": 1869,
       "language": "Russian",
-      "shelf_location": "Z24",
-      "ISBN": "978847845741885"
+      "shelfLocation": "Z24",
+      "ISBN": "978847845741885",
+      "availableQuantity": 10
     },
     {
       "author": "Fyodor Dostoevsky",
       "pages": 768,
       "title": "The Possessed",
-      "year": 1872,
       "language": "Russian",
-      "shelf_location": "R7",
-      "ISBN": "978169141049951"
+      "shelfLocation": "R7",
+      "ISBN": "978169141049951",
+      "availableQuantity": 10
     },
     {
       "author": "Fyodor Dostoevsky",
       "pages": 824,
       "title": "The Brothers Karamazov",
-      "year": 1880,
       "language": "Russian",
-      "shelf_location": "B4",
-      "ISBN": "978473739450343"
+      "shelfLocation": "B4",
+      "ISBN": "978473739450343",
+      "availableQuantity": 10
     },
     {
       "author": "George Eliot",
       "pages": 800,
       "title": "Middlemarch",
-      "year": 1871,
       "language": "English",
-      "shelf_location": "N6",
-      "ISBN": "978265493282112"
+      "shelfLocation": "N6",
+      "ISBN": "978265493282112",
+      "availableQuantity": 10
     },
     {
       "author": "Ralph Ellison",
       "pages": 581,
       "title": "Invisible Man",
-      "year": 1952,
       "language": "English",
-      "shelf_location": "O3",
-      "ISBN": "978778632163022"
+      "shelfLocation": "O3",
+      "ISBN": "978778632163022",
+      "availableQuantity": 10
     },
     {
       "author": "Euripides",
       "pages": 104,
       "title": "Medea",
-      "year": -431,
       "language": "Greek",
-      "shelf_location": "T12",
-      "ISBN": "978555413727904"
+      "shelfLocation": "T12",
+      "ISBN": "978555413727904",
+      "availableQuantity": 10
     },
     {
       "author": "William Faulkner",
       "pages": 313,
       "title": "Absalom, Absalom!",
-      "year": 1936,
       "language": "English",
-      "shelf_location": "D26",
-      "ISBN": "978452556995036"
+      "shelfLocation": "D26",
+      "ISBN": "978452556995036",
+      "availableQuantity": 10
     },
     {
       "author": "William Faulkner",
       "pages": 326,
       "title": "The Sound and the Fury",
-      "year": 1929,
       "language": "English",
-      "shelf_location": "O43",
-      "ISBN": "978290121521655"
+      "shelfLocation": "O43",
+      "ISBN": "978290121521655",
+      "availableQuantity": 10
     },
     {
       "author": "Gustave Flaubert",
       "pages": 528,
       "title": "Madame Bovary",
-      "year": 1857,
       "language": "French",
-      "shelf_location": "G34",
-      "ISBN": "978215502865009"
+      "shelfLocation": "G34",
+      "ISBN": "978215502865009",
+      "availableQuantity": 10
     },
     {
       "author": "Gustave Flaubert",
       "pages": 606,
       "title": "Sentimental Education",
-      "year": 1869,
       "language": "French",
-      "shelf_location": "J6",
-      "ISBN": "978748908491263"
+      "shelfLocation": "J6",
+      "ISBN": "978748908491263",
+      "availableQuantity": 10
     },
     {
       "author": "Federico García Lorca",
       "pages": 218,
       "title": "Gypsy Ballads",
-      "year": 1928,
       "language": "Spanish",
-      "shelf_location": "Q18",
-      "ISBN": "978067564201470"
+      "shelfLocation": "Q18",
+      "ISBN": "978067564201470",
+      "availableQuantity": 10
     },
     {
       "author": "Gabriel García Márquez",
       "pages": 417,
       "title": "One Hundred Years of Solitude",
-      "year": 1967,
       "language": "Spanish",
-      "shelf_location": "O14",
-      "ISBN": "978304259525175"
+      "shelfLocation": "O14",
+      "ISBN": "978304259525175",
+      "availableQuantity": 10
     },
     {
       "author": "Gabriel García Márquez",
       "pages": 368,
       "title": "Love in the Time of Cholera",
-      "year": 1985,
       "language": "Spanish",
-      "shelf_location": "E8",
-      "ISBN": "978028251571382"
+      "shelfLocation": "E8",
+      "ISBN": "978028251571382",
+      "availableQuantity": 10
     },
     {
       "author": "Johann Wolfgang von Goethe",
       "pages": 158,
       "title": "Faust",
-      "year": 1832,
       "language": "German",
-      "shelf_location": "R15",
-      "ISBN": "978219939285229"
+      "shelfLocation": "R15",
+      "ISBN": "978219939285229",
+      "availableQuantity": 10
     },
     {
       "author": "Nikolai Gogol",
       "pages": 432,
       "title": "Dead Souls",
-      "year": 1842,
       "language": "Russian",
-      "shelf_location": "X3",
-      "ISBN": "978337082792651"
+      "shelfLocation": "X3",
+      "ISBN": "978337082792651",
+      "availableQuantity": 10
     },
     {
       "author": "Günter Grass",
       "pages": 600,
       "title": "The Tin Drum",
-      "year": 1959,
       "language": "German",
-      "shelf_location": "F47",
-      "ISBN": "978754946194245"
+      "shelfLocation": "F47",
+      "ISBN": "978754946194245",
+      "availableQuantity": 10
     },
     {
       "author": "João Guimarães Rosa",
       "pages": 494,
       "title": "The Devil to Pay in the Backlands",
-      "year": 1956,
       "language": "Portuguese",
-      "shelf_location": "R49",
-      "ISBN": "978225370011639"
+      "shelfLocation": "R49",
+      "ISBN": "978225370011639",
+      "availableQuantity": 10
     },
     {
       "author": "Knut Hamsun",
       "pages": 176,
       "title": "Hunger",
-      "year": 1890,
       "language": "Norwegian",
-      "shelf_location": "R24",
-      "ISBN": "978189768884507"
+      "shelfLocation": "R24",
+      "ISBN": "978189768884507",
+      "availableQuantity": 10
     },
     {
       "author": "Ernest Hemingway",
       "pages": 128,
       "title": "The Old Man and the Sea",
-      "year": 1952,
       "language": "English",
-      "shelf_location": "H12",
-      "ISBN": "978112425218282"
+      "shelfLocation": "H12",
+      "ISBN": "978112425218282",
+      "availableQuantity": 10
     },
     {
       "author": "Homer",
       "pages": 608,
       "title": "Iliad",
-      "year": -735,
       "language": "Greek",
-      "shelf_location": "N27",
-      "ISBN": "978973928550724"
+      "shelfLocation": "N27",
+      "ISBN": "978973928550724",
+      "availableQuantity": 10
     },
     {
       "author": "Homer",
       "pages": 374,
       "title": "Odyssey",
-      "year": -800,
       "language": "Greek",
-      "shelf_location": "N15",
-      "ISBN": "978855837731878"
+      "shelfLocation": "N15",
+      "ISBN": "978855837731878",
+      "availableQuantity": 10
     },
     {
       "author": "Henrik Ibsen",
       "pages": 68,
       "title": "A Doll's House",
-      "year": 1879,
       "language": "Norwegian",
-      "shelf_location": "O10",
-      "ISBN": "978695359297228"
+      "shelfLocation": "O10",
+      "ISBN": "978695359297228",
+      "availableQuantity": 10
     },
     {
       "author": "James Joyce",
       "pages": 228,
       "title": "Ulysses",
-      "year": 1922,
       "language": "English",
-      "shelf_location": "L49",
-      "ISBN": "978386215334649"
+      "shelfLocation": "L49",
+      "ISBN": "978386215334649",
+      "availableQuantity": 10
     },
     {
       "author": "Franz Kafka",
       "pages": 488,
       "title": "Stories",
-      "year": 1924,
       "language": "German",
-      "shelf_location": "S41",
-      "ISBN": "978393586004208"
+      "shelfLocation": "S41",
+      "ISBN": "978393586004208",
+      "availableQuantity": 10
     },
     {
       "author": "Franz Kafka",
       "pages": 160,
       "title": "The Trial",
-      "year": 1925,
       "language": "German",
-      "shelf_location": "U8",
-      "ISBN": "978021543981330"
+      "shelfLocation": "U8",
+      "ISBN": "978021543981330",
+      "availableQuantity": 10
     },
     {
       "author": "Franz Kafka",
       "pages": 352,
       "title": "The Castle",
-      "year": 1926,
       "language": "German",
-      "shelf_location": "V21",
-      "ISBN": "978954472134402"
+      "shelfLocation": "V21",
+      "ISBN": "978954472134402",
+      "availableQuantity": 10
     },
     {
       "author": "Kālidāsa",
       "pages": 147,
       "title": "The recognition of Shakuntala",
-      "year": 150,
       "language": "Sanskrit",
-      "shelf_location": "M33",
-      "ISBN": "978401406716135"
+      "shelfLocation": "M33",
+      "ISBN": "978401406716135",
+      "availableQuantity": 10
     },
     {
       "author": "Yasunari Kawabata",
       "pages": 288,
       "title": "The Sound of the Mountain",
-      "year": 1954,
       "language": "Japanese",
-      "shelf_location": "X29",
-      "ISBN": "978300514443988"
+      "shelfLocation": "X29",
+      "ISBN": "978300514443988",
+      "availableQuantity": 10
     },
     {
       "author": "Nikos Kazantzakis",
       "pages": 368,
       "title": "Zorba the Greek",
-      "year": 1946,
       "language": "Greek",
-      "shelf_location": "V3",
-      "ISBN": "978225642094358"
+      "shelfLocation": "V3",
+      "ISBN": "978225642094358",
+      "availableQuantity": 10
     },
     {
       "author": "D. H. Lawrence",
       "pages": 432,
       "title": "Sons and Lovers",
-      "year": 1913,
       "language": "English",
-      "shelf_location": "P29",
-      "ISBN": "978754445636670"
+      "shelfLocation": "P29",
+      "ISBN": "978754445636670",
+      "availableQuantity": 10
     },
     {
       "author": "Halldór Laxness",
       "pages": 470,
       "title": "Independent People",
-      "year": 1934,
       "language": "Icelandic",
-      "shelf_location": "F7",
-      "ISBN": "978990772368975"
+      "shelfLocation": "F7",
+      "ISBN": "978990772368975",
+      "availableQuantity": 10
     },
     {
       "author": "Giacomo Leopardi",
       "pages": 184,
       "title": "Poems",
-      "year": 1818,
       "language": "Italian",
-      "shelf_location": "A42",
-      "ISBN": "978608248550077"
+      "shelfLocation": "A42",
+      "ISBN": "978608248550077",
+      "availableQuantity": 10
     },
     {
       "author": "Doris Lessing",
       "pages": 688,
       "title": "The Golden Notebook",
-      "year": 1962,
       "language": "English",
-      "shelf_location": "Q12",
-      "ISBN": "978221712275800"
+      "shelfLocation": "Q12",
+      "ISBN": "978221712275800",
+      "availableQuantity": 10
     },
     {
       "author": "Astrid Lindgren",
       "pages": 160,
       "title": "Pippi Longstocking",
-      "year": 1945,
       "language": "Swedish",
-      "shelf_location": "S13",
-      "ISBN": "978076860271789"
+      "shelfLocation": "S13",
+      "ISBN": "978076860271789",
+      "availableQuantity": 10
     },
     {
       "author": "Lu Xun",
       "pages": 389,
       "title": "Diary of a Madman",
-      "year": 1918,
       "language": "Chinese",
-      "shelf_location": "Q20",
-      "ISBN": "978871840471576"
+      "shelfLocation": "Q20",
+      "ISBN": "978871840471576",
+      "availableQuantity": 10
     },
     {
       "author": "Naguib Mahfouz",
       "pages": 355,
       "title": "Children of Gebelawi",
-      "year": 1959,
       "language": "Arabic",
-      "shelf_location": "Q14",
-      "ISBN": "978107959013080"
+      "shelfLocation": "Q14",
+      "ISBN": "978107959013080",
+      "availableQuantity": 10
     },
     {
       "author": "Thomas Mann",
       "pages": 736,
       "title": "Buddenbrooks",
-      "year": 1901,
       "language": "German",
-      "shelf_location": "Q50",
-      "ISBN": "978660075715002"
+      "shelfLocation": "Q50",
+      "ISBN": "978660075715002",
+      "availableQuantity": 10
     },
     {
       "author": "Thomas Mann",
       "pages": 720,
       "title": "The Magic Mountain",
-      "year": 1924,
       "language": "German",
-      "shelf_location": "R42",
-      "ISBN": "978555947809035"
+      "shelfLocation": "R42",
+      "ISBN": "978555947809035",
+      "availableQuantity": 10
     },
     {
       "author": "Herman Melville",
       "pages": 378,
       "title": "Moby Dick",
-      "year": 1851,
       "language": "English",
-      "shelf_location": "W3",
-      "ISBN": "978809381116930"
+      "shelfLocation": "W3",
+      "ISBN": "978809381116930",
+      "availableQuantity": 10
     },
     {
       "author": "Michel de Montaigne",
       "pages": 404,
       "title": "Essays",
-      "year": 1595,
       "language": "French",
-      "shelf_location": "Q33",
-      "ISBN": "978253215313750"
+      "shelfLocation": "Q33",
+      "ISBN": "978253215313750",
+      "availableQuantity": 10
     },
     {
       "author": "Elsa Morante",
       "pages": 600,
       "title": "History",
-      "year": 1974,
       "language": "Italian",
-      "shelf_location": "F50",
-      "ISBN": "978557733852175"
+      "shelfLocation": "F50",
+      "ISBN": "978557733852175",
+      "availableQuantity": 10
     },
     {
       "author": "Toni Morrison",
       "pages": 321,
       "title": "Beloved",
-      "year": 1987,
       "language": "English",
-      "shelf_location": "G10",
-      "ISBN": "978705211206374"
+      "shelfLocation": "G10",
+      "ISBN": "978705211206374",
+      "availableQuantity": 10
     },
     {
       "author": "Murasaki Shikibu",
       "pages": 1360,
       "title": "The Tale of Genji",
-      "year": 1006,
       "language": "Japanese",
-      "shelf_location": "I19",
-      "ISBN": "978150981201284"
+      "shelfLocation": "I19",
+      "ISBN": "978150981201284",
+      "availableQuantity": 10
     },
     {
       "author": "Robert Musil",
       "pages": 365,
       "title": "The ManWithout Qualities",
-      "year": 1931,
       "language": "German",
-      "shelf_location": "P35",
-      "ISBN": "978574273825240"
+      "shelfLocation": "P35",
+      "ISBN": "978574273825240",
+      "availableQuantity": 10
     },
     {
       "author": "Vladimir Nabokov",
       "pages": 317,
       "title": "Lolita",
-      "year": 1955,
       "language": "English",
-      "shelf_location": "V26",
-      "ISBN": "978004178965792"
+      "shelfLocation": "V26",
+      "ISBN": "978004178965792",
+      "availableQuantity": 10
     },
     {
       "author": "George Orwell",
       "pages": 272,
       "title": "Nineteen Eighty-Four",
-      "year": 1949,
       "language": "English",
-      "shelf_location": "M1",
-      "ISBN": "978019880126704"
+      "shelfLocation": "M1",
+      "ISBN": "978019880126704",
+      "availableQuantity": 10
     },
     {
       "author": "Ovid",
       "pages": 576,
       "title": "Metamorphoses",
-      "year": 100,
       "language": "Classical Latin",
-      "shelf_location": "I10",
-      "ISBN": "978206667922872"
+      "shelfLocation": "I10",
+      "ISBN": "978206667922872",
+      "availableQuantity": 10
     },
     {
       "author": "Fernando Pessoa",
       "pages": 272,
       "title": "The Book of Disquiet",
-      "year": 1928,
       "language": "Portuguese",
-      "shelf_location": "M50",
-      "ISBN": "978936702474117"
+      "shelfLocation": "M50",
+      "ISBN": "978936702474117",
+      "availableQuantity": 10
     },
     {
       "author": "Edgar Allan Poe",
       "pages": 842,
       "title": "Tales",
-      "year": 1950,
       "language": "English",
-      "shelf_location": "U21",
-      "ISBN": "978747462438641"
+      "shelfLocation": "U21",
+      "ISBN": "978747462438641",
+      "availableQuantity": 10
     },
     {
       "author": "Marcel Proust",
       "pages": 2408,
       "title": "In Search of Lost Time",
-      "year": 1920,
       "language": "French",
-      "shelf_location": "D41",
-      "ISBN": "978880692087999"
+      "shelfLocation": "D41",
+      "ISBN": "978880692087999",
+      "availableQuantity": 10
     },
     {
       "author": "François Rabelais",
       "pages": 623,
       "title": "Gargantua and Pantagruel",
-      "year": 1533,
       "language": "French",
-      "shelf_location": "W41",
-      "ISBN": "978282503615363"
+      "shelfLocation": "W41",
+      "ISBN": "978282503615363",
+      "availableQuantity": 10
     },
     {
       "author": "Juan Rulfo",
       "pages": 124,
       "title": "Pedro Páramo",
-      "year": 1955,
       "language": "Spanish",
-      "shelf_location": "K16",
-      "ISBN": "978449914437738"
+      "shelfLocation": "K16",
+      "ISBN": "978449914437738",
+      "availableQuantity": 10
     },
     {
       "author": "Rumi",
       "pages": 438,
       "title": "The Masnavi",
-      "year": 1236,
       "language": "Persian",
-      "shelf_location": "L44",
-      "ISBN": "978289840751001"
+      "shelfLocation": "L44",
+      "ISBN": "978289840751001",
+      "availableQuantity": 10
     },
     {
       "author": "Salman Rushdie",
       "pages": 536,
       "title": "Midnight's Children",
-      "year": 1981,
       "language": "English",
-      "shelf_location": "M19",
-      "ISBN": "978921155550892"
+      "shelfLocation": "M19",
+      "ISBN": "978921155550892",
+      "availableQuantity": 10
     },
     {
       "author": "Saadi",
       "pages": 298,
       "title": "Bostan",
-      "year": 1257,
       "language": "Persian",
-      "shelf_location": "C37",
-      "ISBN": "978128349364371"
+      "shelfLocation": "C37",
+      "ISBN": "978128349364371",
+      "availableQuantity": 10
     },
     {
       "author": "Tayeb Salih",
       "pages": 139,
       "title": "Season of Migration to the North",
-      "year": 1966,
       "language": "Arabic",
-      "shelf_location": "F3",
-      "ISBN": "978464238970459"
+      "shelfLocation": "F3",
+      "ISBN": "978464238970459",
+      "availableQuantity": 10
     },
     {
       "author": "José Saramago",
       "pages": 352,
       "title": "Blindness",
-      "year": 1995,
       "language": "Portuguese",
-      "shelf_location": "V20",
-      "ISBN": "978936661568373"
+      "shelfLocation": "V20",
+      "ISBN": "978936661568373",
+      "availableQuantity": 10
     },
     {
       "author": "William Shakespeare",
       "pages": 432,
       "title": "Hamlet",
-      "year": 1603,
       "language": "English",
-      "shelf_location": "V8",
-      "ISBN": "978350048631687"
+      "shelfLocation": "V8",
+      "ISBN": "978350048631687",
+      "availableQuantity": 10
     },
     {
       "author": "William Shakespeare",
       "pages": 384,
       "title": "King Lear",
-      "year": 1608,
       "language": "English",
-      "shelf_location": "O16",
-      "ISBN": "978608079574068"
+      "shelfLocation": "O16",
+      "ISBN": "978608079574068",
+      "availableQuantity": 10
     },
     {
       "author": "William Shakespeare",
       "pages": 314,
       "title": "Othello",
-      "year": 1609,
       "language": "English",
-      "shelf_location": "Q29",
-      "ISBN": "978722777900839"
+      "shelfLocation": "Q29",
+      "ISBN": "978722777900839",
+      "availableQuantity": 10
     },
     {
       "author": "Sophocles",
       "pages": 88,
       "title": "Oedipus the King",
-      "year": -430,
       "language": "Greek",
-      "shelf_location": "G50",
-      "ISBN": "978193824180959"
+      "shelfLocation": "G50",
+      "ISBN": "978193824180959",
+      "availableQuantity": 10
     },
     {
       "author": "Stendhal",
       "pages": 576,
       "title": "The Red and the Black",
-      "year": 1830,
       "language": "French",
-      "shelf_location": "R26",
-      "ISBN": "978263426756468"
+      "shelfLocation": "R26",
+      "ISBN": "978263426756468",
+      "availableQuantity": 10
     },
     {
       "author": "Laurence Sterne",
       "pages": 640,
       "title": "The Life And Opinions of Tristram Shandy",
-      "year": 1760,
       "language": "English",
-      "shelf_location": "W30",
-      "ISBN": "978676773771499"
+      "shelfLocation": "W30",
+      "ISBN": "978676773771499",
+      "availableQuantity": 10
     },
     {
       "author": "Italo Svevo",
       "pages": 412,
       "title": "Confessions of Zeno",
-      "year": 1923,
       "language": "Italian",
-      "shelf_location": "H47",
-      "ISBN": "978491397449693"
+      "shelfLocation": "H47",
+      "ISBN": "978491397449693",
+      "availableQuantity": 10
     },
     {
       "author": "Jonathan Swift",
       "pages": 178,
       "title": "Gulliver's Travels",
-      "year": 1726,
       "language": "English",
-      "shelf_location": "E24",
-      "ISBN": "978655649956006"
+      "shelfLocation": "E24",
+      "ISBN": "978655649956006",
+      "availableQuantity": 10
     },
     {
       "author": "Leo Tolstoy",
       "pages": 1296,
       "title": "War and Peace",
-      "year": 1867,
       "language": "Russian",
-      "shelf_location": "Z20",
-      "ISBN": "978200451601886"
+      "shelfLocation": "Z20",
+      "ISBN": "978200451601886",
+      "availableQuantity": 10
     },
     {
       "author": "Leo Tolstoy",
       "pages": 864,
       "title": "Anna Karenina",
-      "year": 1877,
       "language": "Russian",
-      "shelf_location": "J41",
-      "ISBN": "978516340978746"
+      "shelfLocation": "J41",
+      "ISBN": "978516340978746",
+      "availableQuantity": 10
     },
     {
       "author": "Leo Tolstoy",
       "pages": 92,
       "title": "The Death of Ivan Ilyich",
-      "year": 1886,
       "language": "Russian",
-      "shelf_location": "X46",
-      "ISBN": "978794914780188"
+      "shelfLocation": "X46",
+      "ISBN": "978794914780188",
+      "availableQuantity": 10
     },
     {
       "author": "Mark Twain",
       "pages": 224,
       "title": "The Adventures of Huckleberry Finn",
-      "year": 1884,
       "language": "English",
-      "shelf_location": "P13",
-      "ISBN": "978903867203834"
+      "shelfLocation": "P13",
+      "ISBN": "978903867203834",
+      "availableQuantity": 10
     },
     {
       "author": "Valmiki",
       "pages": 152,
       "title": "Ramayana",
-      "year": -450,
       "language": "Sanskrit",
-      "shelf_location": "Z44",
-      "ISBN": "978151786093962"
+      "shelfLocation": "Z44",
+      "ISBN": "978151786093962",
+      "availableQuantity": 10
     },
     {
       "author": "Virgil",
       "pages": 442,
       "title": "The Aeneid",
-      "year": -23,
       "language": "Classical Latin",
-      "shelf_location": "K33",
-      "ISBN": "978514986069143"
+      "shelfLocation": "K33",
+      "ISBN": "978514986069143",
+      "availableQuantity": 10
     },
     {
       "author": "Vyasa",
       "pages": 276,
       "title": "Mahabharata",
-      "year": -700,
       "language": "Sanskrit",
-      "shelf_location": "W24",
-      "ISBN": "978113480653613"
+      "shelfLocation": "W24",
+      "ISBN": "978113480653613",
+      "availableQuantity": 10
     },
     {
       "author": "Walt Whitman",
       "pages": 152,
       "title": "Leaves of Grass",
-      "year": 1855,
       "language": "English",
-      "shelf_location": "A19",
-      "ISBN": "978168297733090"
+      "shelfLocation": "A19",
+      "ISBN": "978168297733090",
+      "availableQuantity": 10
     },
     {
       "author": "Virginia Woolf",
       "pages": 216,
       "title": "Mrs Dalloway",
-      "year": 1925,
       "language": "English",
-      "shelf_location": "F43",
-      "ISBN": "978703687013236"
+      "shelfLocation": "F43",
+      "ISBN": "978703687013236",
+      "availableQuantity": 10
     },
     {
       "author": "Virginia Woolf",
       "pages": 209,
       "title": "To the Lighthouse",
-      "year": 1927,
       "language": "English",
-      "shelf_location": "F24",
-      "ISBN": "978597562316704"
+      "shelfLocation": "F24",
+      "ISBN": "978597562316704",
+      "availableQuantity": 10
     },
     {
       "author": "Marguerite Yourcenar",
       "pages": 408,
       "title": "Memoirs of Hadrian",
-      "year": 1951,
       "language": "French",
-      "shelf_location": "R8",
-      "ISBN": "978502413591492"
+      "shelfLocation": "R8",
+      "ISBN": "978502413591492",
+      "availableQuantity": 10
     }
   ]
 }

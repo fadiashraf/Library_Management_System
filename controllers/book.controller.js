@@ -1,17 +1,42 @@
+const httpStatus = require('http-status');
 const responseHandler = require('../helpers/ResponseHandler');
+const bookService = require('../services/internal/book.service');
 
-class BookController {
-  async createBook(req, res) {
-    const { title, authorId, ISBN, availableQuantity, shelfLocationId } = req.body;
-    const user = await authService.loginUserWithEmailAndPassword(email, password);
-    responseHandler.sendResponse({ res, data: user });
-  }
+const createOne = async (req, res) => {
+  const bookObject = req.body;
+  const book = await bookService.createOne(bookObject);
+  responseHandler.sendResponse({ res, data: book, code: httpStatus.CREATED });
+};
 
-  async signUpAdmin(req, res) {
-    const { name, email, password } = req.body;
-    const user = await authService.signUp({ name, email, password });
-    responseHandler.sendResponse({ res, data: user });
-  }
-}
+const getOneById = async (req, res) => {
+  const { id } = req.params;
+  const book = await bookService.getOneById(id);
+  responseHandler.sendResponse({ res, data: book, code: httpStatus.OK });
+};
 
-module.exports = new BookController();
+const updateOne = async (req, res) => {
+  const { id } = req.params;
+  const updates = req.body;
+  const book = await bookService.updateOne(id, updates);
+  responseHandler.sendResponse({ res, data: book, code: httpStatus.OK });
+};
+
+const deleteOneById = async (req, res) => {
+  const { id } = req.params;
+  await bookService.deleteOneById(id);
+  responseHandler.sendResponse({ res, code: httpStatus.NO_CONTENT });
+};
+
+const getBooks = async (req, res) => {
+  const { title, authorId, author, ISBN, page, limit } = req.query;
+  const books = await bookService.getBooks({ title, authorId, author, ISBN, page, limit });
+  responseHandler.sendResponse({ res, data: books });
+};
+
+module.exports = {
+  createOne,
+  getOneById,
+  updateOne,
+  deleteOneById,
+  getBooks,
+};

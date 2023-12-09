@@ -1,5 +1,7 @@
 const { Model } = require('objection');
+const knex = require("../index");
 
+Model.knex(knex);
 module.exports = class Author extends Model {
   // Table name is the only required property.
   static get tableName() {
@@ -25,9 +27,16 @@ module.exports = class Author extends Model {
         modelClass: require('./book.model'),
         join: {
           from: 'authors.id',
-          to: 'books.author_id',
+          to: 'books.authorId',
         },
       },
+    };
+  }
+
+  static get modifiers() {
+    return {
+      $name: (query) => query.select('name'),
+      forBooks: (query) => query.select(['id', 'name']),
     };
   }
 };

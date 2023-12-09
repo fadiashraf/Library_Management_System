@@ -1,7 +1,17 @@
-const Yup = require('yup');
+const yup = require('yup');
 
-const createAuthorSchema = Yup.object({
-  name: Yup.string().required(),
-});
+const createAuthorSchema = yup.object({
+  name: yup.string().required(),
+}).noUnknown();
 
-module.exports = { createAuthorSchema };
+const getAuthorsSchema = yup.object({
+  name: yup.string(),
+  page: yup.number().integer().default(1),
+  limit: yup.number().integer().default(50),
+}).noUnknown();
+
+const updateAuthorSchema = yup.object({
+  name: yup.string().required(),
+}).noUnknown();
+
+module.exports = { createAuthorSchema, getAuthorsSchema, updateAuthorSchema };

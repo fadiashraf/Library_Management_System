@@ -9,7 +9,7 @@ exports.seed = async function (knex) {
     .insert([
       {
         name: 'Fady',
-        email: 'fadyashraf.anwer@gmail.com',
+        email: 'email@example.com',
         password: await hashPassword('12345678'),
       },
     ])

@@ -6,11 +6,7 @@ const envVarsSchema = yup.object({
   PORT: yup.number().default(3000),
   JWT_SECRET: yup.string().required().default('JWT_SECRET'),
   JWT_ACCESS_EXPIRATION_MINUTES: yup.number().default(60),
-  ISSUER: yup
-    .string()
-    .required()
-    .default('http://dev.library.com')
-    ,
+  ISSUER: yup.string().required().default('http://dev.library.com'),
   MYSQL_USERNAME: yup.string().required(),
   MYSQL_PASSWORD: yup.string().required(),
   MYSQL_DATABASE: yup.string().required(),

@@ -1,12 +1,12 @@
 const { Model } = require('objection');
-const knex = require("../index");
+const knex = require('../index');
 
 Model.knex(knex);
 
-class AdminModel extends Model {
+class UserModel extends Model {
   // Table name is the only required property.
   static get tableName() {
-    return 'admins';
+    return 'users';
   }
 
   // Each model must have a column (or a set of columns) that uniquely
@@ -17,6 +17,11 @@ class AdminModel extends Model {
     return 'id';
   }
 
-
+  static get modifiers() {
+    return {
+      $name: (query) => query.select('name'),
+      forBorrowings: (query) => query.select(['id', 'name', 'email']),
+    };
+  }
 }
-module.exports = AdminModel;
+module.exports = UserModel;
