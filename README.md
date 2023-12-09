@@ -20,13 +20,12 @@
  4. Run `node initialSetup`   to initialize DB and create migrations and seeds
  5. Run `npm run start`
  6. API will be live at `http://localhost:3000/`
+ 7. sign up an admin to be able to use endpoint as they are authenticated
 
 
 ### Explore Docs
   there is a postman json file with examples  that you can import and check the endpoints
     - check  [postman json file](Library.postman_collection.json)   
 
-    
-
-
-
+## ERD 
+![ERD](https://github.com/fadiashraf/Library_Management_System/blob/main/ERD.png?raw=true)
