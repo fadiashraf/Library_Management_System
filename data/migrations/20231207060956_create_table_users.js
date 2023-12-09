@@ -7,7 +7,7 @@ exports.up = function (knex) {
     table.increments('id').primary();
     table.string('name');
     table.string('email').unique().notNullable();
-    table.dateTime('deactivatedAt').nullable();
+    table.timestamp('deactivatedAt').nullable();
     table.timestamps(true, true);
   });
 };

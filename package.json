@@ -4,6 +4,7 @@
   "description": "Library_Management_System",
   "main": "app.js",
   "scripts": {
+    "initialSetup": "node ./initialSetup.js",
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "debug": "DEBUG=Library:server node ./src/bin/www"

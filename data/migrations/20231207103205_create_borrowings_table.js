@@ -22,9 +22,9 @@ exports.up = function (knex) {
       .onDelete('RESTRICT')
       .onUpdate('CASCADE')
       .notNullable();
-    table.dateTime('checkOutDate').notNullable().defaultTo(knex.raw('CURRENT_TIMESTAMP'));
-    table.dateTime('dueDate').notNullable();
-    table.dateTime('returnedAt').nullable();
+    table.timestamp('checkOutDate').notNullable().defaultTo(knex.raw('CURRENT_TIMESTAMP'));
+    table.timestamp('dueDate').notNullable();
+    table.timestamp('returnedAt').nullable();
     table.timestamps(true, true);
   });
 };
