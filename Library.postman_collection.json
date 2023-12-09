@@ -29,7 +29,9 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"exec": [],
+								"exec": [
+									""
+								],
 								"type": "text/javascript"
 							}
 						}
@@ -39,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\":\"fadyashraf.anwer@gmail.com\",\n    \"password\":\"12345678\"\n}",
+							"raw": "{\n    \"email\":\"test@example.com\",\n    \"password\":\"12345678\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1075,7 +1077,7 @@
 								"book"
 							]
 						},
-						"description": "create author"
+						"description": "create book"
 					},
 					"response": [
 						{
@@ -1330,7 +1332,7 @@
 								"103"
 							]
 						},
-						"description": "create author"
+						"description": "update book by id"
 					},
 					"response": [
 						{
@@ -1587,7 +1589,7 @@
 								"46"
 							]
 						},
-						"description": "create author"
+						"description": "delete book but if not exist before in borrowings"
 					},
 					"response": [
 						{
@@ -1895,7 +1897,7 @@
 								}
 							]
 						},
-						"description": "create author"
+						"description": "get books by filters"
 					},
 					"response": [
 						{
@@ -2078,7 +2080,7 @@
 								"5"
 							]
 						},
-						"description": "create author"
+						"description": "get one book by id"
 					},
 					"response": [
 						{
@@ -2231,7 +2233,7 @@
 								"user"
 							]
 						},
-						"description": "create author"
+						"description": "create user \"library member\""
 					},
 					"response": [
 						{
@@ -2486,7 +2488,7 @@
 								"2"
 							]
 						},
-						"description": "create author"
+						"description": "delete user but if not exist before in borrowings"
 					},
 					"response": [
 						{
@@ -2504,11 +2506,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/user/5",
+									"raw": "localhost:3000/v1/user/5",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"user",
 										"5"
 									]
@@ -2634,7 +2638,7 @@
 								"3"
 							]
 						},
-						"description": "create author"
+						"description": "update user by id"
 					},
 					"response": [
 						{
@@ -2652,11 +2656,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/user/4",
+									"raw": "localhost:3000/v1/user/4",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"user",
 										"4"
 									]
@@ -2906,7 +2912,7 @@
 								}
 							]
 						},
-						"description": "create author"
+						"description": "get users"
 					},
 					"response": [
 						{
@@ -2924,11 +2930,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/user",
+									"raw": "localhost:3000/v1/user",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"user"
 									]
 								}
@@ -3056,7 +3064,7 @@
 								"4"
 							]
 						},
-						"description": "create author"
+						"description": "get one user"
 					},
 					"response": [
 						{
@@ -3074,11 +3082,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/user/4",
+									"raw": "localhost:3000/v1/user/4",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"user",
 										"4"
 									]
@@ -3210,7 +3220,7 @@
 								"borrow"
 							]
 						},
-						"description": "create author"
+						"description": "user borrows some books\n\nby ability to borrow more than 1 per each book"
 					},
 					"response": [
 						{
@@ -3228,11 +3238,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/borrowing/borrow",
+									"raw": "localhost:3000/v1/borrowing/borrow",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"borrowing",
 										"borrow"
 									]
@@ -3333,7 +3345,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"borrowingIds\":[3,4]\n}",
+							"raw": "{\n\t\"borrowingIds\":[1,2]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3350,7 +3362,7 @@
 								"return"
 							]
 						},
-						"description": "create author"
+						"description": "mark book as returned"
 					},
 					"response": [
 						{
@@ -3368,11 +3380,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/borrowing/borrow",
+									"raw": "localhost:3000/v1/borrowing/borrow",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"borrowing",
 										"borrow"
 									]
@@ -3484,7 +3498,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrlV1}}/borrowing?fromCheckDate=1702082570&toCheckDate=1702100570",
+							"raw": "{{baseUrlV1}}/borrowing?fromCheckDate=1702082570&toCheckDate=1702105346",
 							"host": [
 								"{{baseUrlV1}}"
 							],
@@ -3521,12 +3535,12 @@
 								},
 								{
 									"key": "toCheckDate",
-									"value": "1702100570",
+									"value": "1702105346",
 									"description": "to specific check out date "
 								}
 							]
 						},
-						"description": "create author"
+						"description": "get borrowings by filters\n\ncan be paginated or get all based on ignorePagination filter"
 					},
 					"response": [
 						{
@@ -3544,11 +3558,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/borrowing?statusType=returned",
+									"raw": "localhost:3000/v1/borrowing?statusType=returned",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"borrowing"
 									],
 									"query": [
@@ -3664,6 +3680,24 @@
 				},
 				{
 					"name": "Export to Excel file",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3690,7 +3724,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrlV1}}/borrowing/export?fromCheckDate=1702082570&toCheckDate=1702100570",
+							"raw": "{{baseUrlV1}}/borrowing/export?statusType=exceedDueDate&fromCheckDate=1702082570&toCheckDate=1702100570",
 							"host": [
 								"{{baseUrlV1}}"
 							],
@@ -3700,6 +3734,11 @@
 							],
 							"query": [
 								{
+									"key": "statusType",
+									"value": "exceedDueDate",
+									"description": "one of: (all , returned , notReturned , exceedDueDate)"
+								},
+								{
 									"key": "bookId",
 									"value": "1",
 									"disabled": true
@@ -3707,12 +3746,6 @@
 								{
 									"key": "userId",
 									"value": "3",
-									"disabled": true
-								},
-								{
-									"key": "ignorePagination",
-									"value": "false",
-									"description": "boolean , if true will get all without pagination",
 									"disabled": true
 								},
 								{
@@ -3727,7 +3760,7 @@
 								}
 							]
 						},
-						"description": "create author"
+						"description": "Export borrowings to Excel file by filters"
 					},
 					"response": [
 						{
@@ -3745,11 +3778,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrlV1}}/borrowing?statusType=returned",
+									"raw": "localhost:3000/v1/borrowing?statusType=returned",
 									"host": [
-										"{{baseUrlV1}}"
+										"localhost"
 									],
+									"port": "3000",
 									"path": [
+										"v1",
 										"borrowing"
 									],
 									"query": [
@@ -3862,6 +3897,505 @@
 							"body": "{\n    \"success\": true,\n    \"err\": null,\n    \"data\": {\n        \"borrowings\": [\n            {\n                \"id\": 3,\n                \"quantity\": 2,\n                \"checkOutDate\": \"2023-12-08T13:29:27.000Z\",\n                \"dueDate\": \"1970-01-20T16:46:18.000Z\",\n                \"returnedAt\": \"2023-12-09T04:36:01.000Z\",\n                \"createdAt\": \"2023-12-08T13:29:27.000Z\",\n                \"updatedAt\": \"2023-12-08T13:29:27.000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"eeeee\",\n                    \"email\": \"email@example.com\"\n                },\n                \"book\": {\n                    \"id\": 44,\n                    \"title\": \"Iliad\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"quantity\": 2,\n                \"checkOutDate\": \"2023-12-08T13:29:27.000Z\",\n                \"dueDate\": \"1970-01-20T16:46:18.000Z\",\n                \"returnedAt\": \"2023-12-09T04:36:01.000Z\",\n                \"createdAt\": \"2023-12-08T13:29:27.000Z\",\n                \"updatedAt\": \"2023-12-08T13:29:27.000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"eeeee\"\n                },\n                \"book\": {\n                    \"id\": 5,\n                    \"title\": \"The Book Of Job\"\n                }\n            }\n        ],\n        \"pages\": 1,\n        \"next\": null,\n        \"previous\": null,\n        \"count\": 2\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "Exports all overdue borrows of the last month.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Get the current date",
+									"const currentDate = new Date();",
+									"",
+									"// Calculate the first day of the last month",
+									"const firstDayOfLastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);",
+									"",
+									"// Get the timestamp for the first day of the last month in milliseconds",
+									"const timestampLastMonth = firstDayOfLastMonth.getTime()/1000;",
+									"",
+									"// Get the timestamp for the current date",
+									"const todayTimestamp = currentDate.getTime()/1000;",
+									"",
+									"// Set the timestamps as collection variables",
+									"pm.collectionVariables.set(\"timestampLastMonth\", timestampLastMonth);",
+									"pm.collectionVariables.set(\"todayTimestamp\", todayTimestamp);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlV1}}/borrowing/export?statusType=exceedDueDate&fromCheckDate={{timestampLastMonth}}&toCheckDate={{todayTimestamp}}&=",
+							"host": [
+								"{{baseUrlV1}}"
+							],
+							"path": [
+								"borrowing",
+								"export"
+							],
+							"query": [
+								{
+									"key": "statusType",
+									"value": "exceedDueDate",
+									"description": "one of: (all , returned , notReturned , exceedDueDate)"
+								},
+								{
+									"key": "bookId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "fromCheckDate",
+									"value": "{{timestampLastMonth}}",
+									"description": "from specific check out date "
+								},
+								{
+									"key": "toCheckDate",
+									"value": "{{todayTimestamp}}",
+									"description": "to specific check out date "
+								},
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						},
+						"description": "Exports all overdue borrows of the last month"
+					},
+					"response": [
+						{
+							"name": "Exports all overdue borrows of the last month.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/v1/borrowing/export?statusType=exceedDueDate&fromCheckDate=1701108709&toCheckDate=1702108709&=",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"v1",
+										"borrowing",
+										"export"
+									],
+									"query": [
+										{
+											"key": "statusType",
+											"value": "exceedDueDate",
+											"description": "one of: (all , returned , notReturned , exceedDueDate)"
+										},
+										{
+											"key": "bookId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "fromCheckDate",
+											"value": "1701108709",
+											"description": "from specific check out date "
+										},
+										{
+											"key": "toCheckDate",
+											"value": "1702108709",
+											"description": "to specific check out date "
+										},
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+								},
+								{
+									"key": "Content-Disposition",
+									"value": "attachment; filename=\"borrowings.xlsx\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Dec 2023 08:00:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W���\tY\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Mn�0\u0010��=E�-J\f]TUE¢��\u0016��\u0000�xB,\u001c���w\u0012(�* �`\u0013+�7�{��\u0019O��I�\u0018H;��Q6\u0014\t��)m\u0017������\"�\bV�q\u0016s�C\u0012��n<�y���-墎�?IIe�\rP�\n<Z�T.4\u0010�6,��r\t\u000b����,��hc\u001a[\u000fQ��X����eˏ�A\u0002\u001a\u0012��^زr\u0001�\u001b]B�\\[���\u001e\b\u0019wv\u001a���\u0001\u000b�\n    <Ih+�\u0001��w�L�\n�\u0019��\u0006\r���ȍ\u000b�/��e�\u0013)]U�\u0012�+W\r�d�\u0003��\u001a16&�֬\u0001m\u0007��NL�[F7\u000er���\u0011�}��z}�Φ\u0007Hqg�n=�δ�\\C@�\u0011\u0003\u001f��\u0007��}�]_I��i�\rS�m����<�\u0011\r��]����;�l�!�ˣ=\u0012���b;+��\u0004[v?��\u001bPK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000_rels/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W�I��\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000_rels/.rels���N�0\f@�|E���nH\b��� ��&4>�$n\u001b���ă�@\f�i\u0007�q��g���<��R�\u001c\f,�\u001a\u0014\u0005�·����iq\u000f*\u000b\u0006�#\u00072p�\f��f�L#J�ɽ�Y\u0015H�\u0006z���u�=M�+�\u0014�O�iB)���v������t�ɀ愩��@ں%��1�5ln[o��a� gZ��(dL\u001d��y�W�*P��]V׻�=��HС���h\u0011S�N��Z�u\u001c�]\t�όKB���\u001c���#wY\tc�2�'7�|\u0000PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000xl/PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000xl/_rels/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000xl/_rels/workbook.xml.rels���j�0\u0010D��\n��ZvZJ)�s)�\\[�\u0003���LlIh7m��U\u001bH\u001c\b�\u0007�Ĭؙ�H���8�OL�\u0007��*J\u0010�M���\u0014|4��g\u0010��[=\u0004�\n&$��w�7\u001c4�\u001dr}$�M<)p��EJ2\u000eGME���M\u001bҨ9��ɨ�^w(We�$��\u0003�\u000bO��\n��V �)��C��\u0006_�9���J�$���/\u001a�:d\u0005G]d\u001f���WK�s��s��<\u000e�[\f\u000f�V�tB��)?���\u0016��0_!��!�\u0019�4�E�ǩ\u0019y���\u001fPK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000xl/worksheets/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�WJgA|�\u0001\u0000\u0000\u0005\u0004\u0000\u0000\u0018\u0000\u0000\u0000xl/worksheets/sheet1.xml���o� \u0010���W �\u001b�4?\u001a�v�5�2i���Ӟ\t�1*p\bH��߅4����/\u0016w\u001f���P޿\u0018M��\u0007\u0005���(�DZ\u0001��ۊ�yZ��Q\u0012\"�\r�`eE�2���Sy\u0000�\u001c:)#A\u0001\u001b*���\nƂ��a\u0004NZ$-x�#�~˂�7��l�e3f����P��h@�*!� vF�x\u0016�R��N�pQ3�#r��睻\u0011`\u001cJl�V�D)1������Fc�/����v\n��\u001b%<\u0004h�\b�^\u000b}��-\u0018*�e����ԉ�mE\u001f�b�SV�i�*��ӓF�|��/8���v\u0011-�R\u0002������^jD\u0015͆�G�)�\n-��R\u0006���tz�ŒG^�\u001e\u000e\u0004\u0007��Ɏ�l̋�w�e��\u0014k\u0016��\u000f�\u0019S\u0001�}��l_�L���}�\u000f�c���l�g�C���&C���}��ِ��l~e\fǁ��|\u001c��\u001f�o�\rD�6�bN�?{��\u0011\\Z�/\u001b�\u0011�%��y�O�-%-@�\u0004��[Ɲ#�\u0015�8]��:��s\u0015�0��\u0001\u0002�t����b����\u000b���\u001a�x\u0007\u0004L�]�3��U�\t��&v��\u0014^�Щ\u0002v}��PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W]&���\u0000\u0000\u0000q\u0001\u0000\u0000\u0014\u0000\u0000\u0000xl/sharedStrings.xmlm��N\u00031\fD�|��;��\u0001!���V\\\u0011\b> l�n��Yb\u0007��\u0013@Hh�8�4�x��='x�ʱ�Ug�A\u0001�XB��UO����\nX<\u0005�\n�UGd�v'�Y�G���D�+�y�0{^�\u0019��]��K�u�y��\u0003O���>\u001f�\u000b�}$\u0005ci$V�\u001b��K�͏v��3�nJ�字�\u0018�\u0016g�����'�r\\��\t�\u0003�5��\u0017\\�m��\u0007�V\t\u0003\\�\u00125�\n���\u0017�OǴ$ϥ\u001c��K�2�o�>\u0000PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000xl/theme/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�Wv�0�!\u0006\u0000\u0000\u0019\u001f\u0000\u0000\u0013\u0000\u0000\u0000xl/theme/theme1.xml�YMo�6\u0018��W\u0010���R'�SĎ�nm� q;�HK�Ć\u0012\u0005�N���\u001e\u0007\f\u0018�\r�\f�m�a[�\u0016إ�5�:l\u001dп�Wև)�j�&�P 98\"�<�\u0017��%i_�q\u001c2tH��<�X��5\u000b���\u001e���u8�Ҷ�T8�0�\u0011�XS\"�\u001b�\u001f]�\u001b* !A@��\u0006�X�R�mK\u0017����c\u0012��1\u0017!V0\u0014��\t|\u0004bCf7j�5;�4�P�C�zo<�.A�D���r�}\u0006\u001f���\u0019��}w�S�h�>�/���\u0004:Ĭc�.�\u001f\rɱ�\u0010�R���U��Y6��9��*�F\u001d��rjN�\u000e\u001a)U���[\u001f�֯mϵ42-\u0006h�����s�)\u0004�.�]_��\u0006�z�����g��^ͩ�\u0016(���2e���:�eJS���)��Zk�Q��4�c��뭕)�FY[�\f����\u0016(),`4:X&$�=_�9h��-3�\r�v�!\u001a��R0�\u0011�ʌ\f�#.\u0006�H�\u001e+\u001a!5��\u0018����p$(�i�\u001b\u0004k��9W.�%\n�t\u0005�U��$�P>s̛�?�y�\u001c�y����ǿ�\n        <yr��\u0017\u0013�\u0016�|����/���3����_?��� u�\u001f?��o_U ��|�ͳ?_<{��\u0017��Ԅ�\u0012x��4$\u0012�%Gh����I\u0005\u0019�3R�\u0001�%\n\u000e\u0000jB�UPBޝbf\u0004vI9�\u000f\u0004�\u000b#���Q���@L\u00145!o\u0007a\t��9�ra��v�N�i\u0012�\u0015��D\u0007�a|hT�[X��$�ܦF����L�e���'\u0011Q(y�\u000f\b1�\u001eRZ��\u000eu\u0005�|��C����\u00033�#efݢ!,��h#�z)B;\u000fP�3��mrX�B�`f\u0014JX)�7�D��l5\u000e�\u000e��U`4t*�RूE�\t��\u0011)��{bZ2�6�6e΀\u001d6\r�P��\u0011z\u0007s�C��A/�al��F�\u000e�X\u001e@�b�˕�\u000e^��d\f\u000b���@�:c�ߧ~`N���D\u0018k��r�N�\u0018�(�\u0004ʽ<��[;;���/;�Bg߂��XQ���\u0012��v�m<�v\tT�e\u0013�l�M�m\u0015�>Z�֬m�ȞJ\n�\u000f�c�ؾ�2rG��^���\u0000f�ьW�\u001a�\u0000\u001es�e�/�l�\u0004W�R\u0015�\u00078\u0006]�T�/s��D1�pe��\u0015�Wc\n��&��2\u000bx�v���7K��BR:�eI]3\u0011����󫬧ؕu֝\n��i:m=�P[\b'_k��\u001a�\u0005�E�\u0011/Y�LH�X�{��5}�\u0002�\u0011Ӽ�k�����і��{�\u0010w�P{,Z\u0018�����4\u001c\u000b�8�Xc8��c\u0018�L�4(���c�*�u��]�~�\"��5�����XH��e�\u0012g�/z\"͑��J�rQ�\u0018�Ъ�4����\u0016{i��xL\\U5���|���\u000f�#4b\u0013����V�z\u001e��m4��oeYY.�\u0016�N�+\u000b�8�YA���H\t頰#\u001d�F�U>��O�\u000b�ɹ�)��]8\u00137�ٳ\u000b\u0007\u0005�Q��\u001d�\u000b\u0015ph]q@݁��E�\u0011�CP:�i�%_�'6�C�ݥR���\u0007j��HPh�*\u0010�������\u001b�]7\u0017�����2�\u001eF䐰aR�kI0,\u0014��'�J�\\ZH�X�#�\u0001\u001c�Z／�յζ����C�T��o�j����Q�~�y�N����p�A�\u0007�\u0000T�L;'\u000f�\u001ed\u0006*�\u0012\br�J;+�br\u0004��u?\u0013a����]�\t\u0017~z��߬���J�\u0013�\u0010~���ۆ����R:\\�q��\u001e�\u0005�p\t��lJ�0̞vE���{���ɴ�d�)6\b\u0016�1��q��\u000bQ�~��\u001f\u0019�2=I(\nns\u0015n��6���X�_p6�i���<�2��?ed\u00190o��ر��Q\\ɓ�(��|�(����\u0014Eu|j\u0014�����$�J�^��\u001e���%��PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W\u0005;�^v\u0002\u0000\u0000\u0003\u0006\u0000\u0000\r\u0000\u0000\u0000xl/styles.xml��]o�0\u0014���+,�S\u0003\r,��ji�T��*5�v�I��\u0003\u0019ӑM��;\u0006\u0012\u0012uڦ��ǯ����3��@/�4\\�\u0014\u0007W>FL\u0015��j�⯛ܛc�X�J*�b)>�\u0006�d\u001f��\u001e\u0004{�3f\u0011\u0010T�⽵�����3I�+]3\u0005#�6�Z�\u001dij�hٸIR���c\")Wx ,e�?\u0010I�s[{��5�|�\u0005�����,��;�\r�\np�\u00053Z�.�Mx��K��H^\u0018���^\u0001���\u0005{�uA\u0016�\u0016\u0013\t�o#\u0005\u0011��a�YRie\u001bT�VY�}�;��g����\r9q�ʒB\u000bm��R��\u0004t*�8�\u0017*R\u001c:�7�\u0006Ar؊^�1\bA?G�c�-\u0015|k�\u0013�P�o\u001a�r!N�B<\bY\u0002\u001bn�Q9t�\u0018o\u000e5�Qp5\u0006L���읡� ��&�\r��jS�U���(e�`��\t������&n�Z��,)9�iE�C\u001eg�\u0001`\u000b&ē��ߪ\u000bvW!��\\��2�p���!\u0018\u001a�\u00013t\u001c��6�ߍE]u�?��B\u0017����I���{\u001bbB�m˅��\u000f��Yv��~Ժ�rY\u0005\u0018%�h+��4��)��J�����_�\u001d�����T\u0010�\u001a��\u000f��[�\u001a��w����]\u001ezs5�f�,�\u0016�j�E���z�/�п�u�j��fǇ\u0006�e# ˌ�\u001d�?MZ��:��~�����E\u0018������k?�f1�{��:��(\b��lu\u0017�љ�荿�O�`2\u001f--�Lp�.�o�U8$��e\u0011�x\u0012d����PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\r@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000docProps/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W_m�\u0002�\u0001\u0000\u0000'\u0003\u0000\u0000\u0010\u0000\u0000\u0000docProps/app.xml��Ao�0\f���\u0015�n(�@V1�\u001bzX�\u0000I�3+ӱPY\u0012D�K��';��;��H><��n\u000f�+zLd���rQ�\u0002�\t���J<�]}\u0016\u00051�\u001a\\�X�#���\u001f�&���-R�\u0013\n            <U�e�+)ɴ�\u0001-���I\u0013R\u0007�˴��i���`^;�,���F���X_�)P�\u0012W=�oh\u001d��GO�c�yZ}��Y\u0003�R?X�\u0002����\u0007�N��P�-��d��K%��\u001ap����\u0001G��[C�#\f;ۀM�Uϫ\u001e\r�T����v-�g \u001cp*�C��Y�l�b�.\u0012'�3�\u0017j\u0011������{��~��ѐťQN Y_\"�,;�\u001f�\u0006\u0012��x9'\u001e\u0019Č�9�\u0014~�������\u000e]\u0004��('�\u0000\u001e�8x'���\u0017z��p\u0007��-_6ն��u~��\u0015���ϸ�\r�u\u000b~����~0�������fQ~,��\u0014�=%�N\\�\u0001PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\r@�WsK�B^\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000docProps/core.xml�R�N�0\u0010��\u0015�禎\u0014�\u0012��\u0004�'*!Q\u0004�f�mk�ؖ�%���<���'n;;��}8[\u001c�\"�\u0001�Vs\u0012O\"\u0012��ZH�����2���!S�\u0015Z�����\"�ɸI���b�\u0001�\u0012\\���K���\u001d�I)u|\u0007%s\u0013�P��h[2��n�a|϶@�(��% \u0013\f\u0019m\fC38��R���\u001cl�\u001a\bN��\u0012\u0014:\u001aOb:j\u0011l�\u0016�̙��X\u001b�*=����� ��jRM[��?�\u001f���v�P�fU\u001cH�\t�r\u000b\f����^�Je�,��(���M������\u001b8v�\u0001�X��V\u001a�w�ȋ�?�\u001e�J[�<{��K1���uG�ȃ�9\\�so$��z��/����f\u0000\u0011����\u0006O����i�$y\u0012%�0N��~\u001d��(J��Ϧ��Ѱ�\u001f���ɠ���_�PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\r@�Wa��\u0005\\\u0001\u0000\u0000u\u0002\u0000\u0000\u000f\u0000\u0000\u0000xl/workbook.xml���N�0\f��\n                <E�;k�\u0006�i-\u0012\u0002�]\u0010\u0007����\u0016-�#'����+\u0012څK\u0012����q֏�Ί\u0003P4�KY�r)�kl�ߖ�����^���o�E\u000f�\n                    <A��������\u0011���},�.��ʲ�w�T�a\u0000ϑ\u0016ɩ�&m�\u0018\bT\u0013w\u0000���&��2���#aE�a`�\u001a\rϨ;\u0007>�\u0010\u0002�\u0012��;\u0013�Ds�?8�h߅k�.0�6֤�\u0000����f�Tm����v\"��\u0002�&�ئ\u0019��\"/�-�(Ɩ�uk,|��.T\bo��U�\u0014V��Ҙ\u0004M)���#�qP\u0017�:c�x��s�U��x'�@�:�>X�D��-򢐂K&�w2\u0007�O��s\u0007u�a�4}L�AQ�Dx�\u0010�_��u0�𛰒�᫴i\u0016=)�PZY�R�m@-��f9ܘ�V?PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W���\tY\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0001\u0000\u0000_rels/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W�I��\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0001\u0000\u0000_rels/.relsPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0002\u0000\u0000xl/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0002\u0000\u0000xl/_rels/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0003\u0000\u0000xl/_rels/workbook.xml.relsPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000)\u0004\u0000\u0000xl/worksheets/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�WJgA|�\u0001\u0000\u0000\u0005\u0004\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000U\u0004\u0000\u0000xl/worksheets/sheet1.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W]&���\u0000\u0000\u0000q\u0001\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000w\u0006\u0000\u0000xl/sharedStrings.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0007\u0000\u0000xl/theme/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�Wv�0�!\u0006\u0000\u0000\u0019\u001f\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0007\u0000\u0000xl/theme/theme1.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W\u0005;�^v\u0002\u0000\u0000\u0003\u0006\u0000\u0000\r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\r\u0000\u0000xl/styles.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\r@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0010\u0000\u0000docProps/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W_m�\u0002�\u0001\u0000\u0000'\u0003\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0010\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\r@�WsK�B^\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000s\u0012\u0000\u0000docProps/core.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\r@�Wa��\u0005\\\u0001\u0000\u0000u\u0002\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0014\u0000\u0000xl/workbook.xmlPK\u0005\u0006\u0000\u0000\u0000\u0000\u0010\u0000\u0010\u0000�\u0003\u0000\u0000�\u0015\u0000\u0000\u0000\u0000"
+						}
+					]
+				},
+				{
+					"name": "Exports all borrows of the last month",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Get the current date",
+									"const currentDate = new Date();",
+									"",
+									"// Calculate the first day of the last month",
+									"const firstDayOfLastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);",
+									"",
+									"// Get the timestamp for the first day of the last month in milliseconds",
+									"const timestampLastMonth = firstDayOfLastMonth.getTime()/1000;",
+									"",
+									"// Get the timestamp for the current date",
+									"const todayTimestamp = currentDate.getTime()/1000;",
+									"",
+									"// Set the timestamps as collection variables",
+									"pm.collectionVariables.set(\"timestampLastMonth\", timestampLastMonth);",
+									"pm.collectionVariables.set(\"todayTimestamp\", todayTimestamp);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrlV1}}/borrowing/export?fromCheckDate={{timestampLastMonth}}&toCheckDate={{todayTimestamp}}&=",
+							"host": [
+								"{{baseUrlV1}}"
+							],
+							"path": [
+								"borrowing",
+								"export"
+							],
+							"query": [
+								{
+									"key": "statusType",
+									"value": "exceedDueDate",
+									"description": "one of: (all , returned , notReturned , exceedDueDate)",
+									"disabled": true
+								},
+								{
+									"key": "bookId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "fromCheckDate",
+									"value": "{{timestampLastMonth}}",
+									"description": "from specific check out date "
+								},
+								{
+									"key": "toCheckDate",
+									"value": "{{todayTimestamp}}",
+									"description": "to specific check out date "
+								},
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						},
+						"description": "Exports all borrows of the last month"
+					},
+					"response": [
+						{
+							"name": "Exports all overdue borrows of the last month.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/v1/borrowing/export?statusType=exceedDueDate&fromCheckDate=1701108709&toCheckDate=1702108709&=",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"v1",
+										"borrowing",
+										"export"
+									],
+									"query": [
+										{
+											"key": "statusType",
+											"value": "exceedDueDate",
+											"description": "one of: (all , returned , notReturned , exceedDueDate)"
+										},
+										{
+											"key": "bookId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "fromCheckDate",
+											"value": "1701108709",
+											"description": "from specific check out date "
+										},
+										{
+											"key": "toCheckDate",
+											"value": "1702108709",
+											"description": "to specific check out date "
+										},
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+								},
+								{
+									"key": "Content-Disposition",
+									"value": "attachment; filename=\"borrowings.xlsx\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Dec 2023 08:00:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W���\tY\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Mn�0\u0010��=E�-J\f]TUE¢��\u0016��\u0000�xB,\u001c���w\u0012(�* �`\u0013+�7�{��\u0019O��I�\u0018H;��Q6\u0014\t��)m\u0017������\"�\bV�q\u0016s�C\u0012��n<�y���-墎�?IIe�\rP�\n<Z�T.4\u0010�6,��r\t\u000b����,��hc\u001a[\u000fQ��X����eˏ�A\u0002\u001a\u0012��^زr\u0001�\u001b]B�\\[���\u001e\b\u0019wv\u001a���\u0001\u000b�\n    <Ih+�\u0001��w�L�\n�\u0019��\u0006\r���ȍ\u000b�/��e�\u0013)]U�\u0012�+W\r�d�\u0003��\u001a16&�֬\u0001m\u0007��NL�[F7\u000er���\u0011�}��z}�Φ\u0007Hqg�n=�δ�\\C@�\u0011\u0003\u001f��\u0007��}�]_I��i�\rS�m����<�\u0011\r��]����;�l�!�ˣ=\u0012���b;+��\u0004[v?��\u001bPK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000_rels/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W�I��\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000_rels/.rels���N�0\f@�|E���nH\b��� ��&4>�$n\u001b���ă�@\f�i\u0007�q��g���<��R�\u001c\f,�\u001a\u0014\u0005�·����iq\u000f*\u000b\u0006�#\u00072p�\f��f�L#J�ɽ�Y\u0015H�\u0006z���u�=M�+�\u0014�O�iB)���v������t�ɀ愩��@ں%��1�5ln[o��a� gZ��(dL\u001d��y�W�*P��]V׻�=��HС���h\u0011S�N��Z�u\u001c�]\t�όKB���\u001c���#wY\tc�2�'7�|\u0000PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000xl/PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000xl/_rels/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000xl/_rels/workbook.xml.rels���j�0\u0010D��\n��ZvZJ)�s)�\\[�\u0003���LlIh7m��U\u001bH\u001c\b�\u0007�Ĭؙ�H���8�OL�\u0007��*J\u0010�M���\u0014|4��g\u0010��[=\u0004�\n&$��w�7\u001c4�\u001dr}$�M<)p��EJ2\u000eGME���M\u001bҨ9��ɨ�^w(We�$��\u0003�\u000bO��\n��V �)��C��\u0006_�9���J�$���/\u001a�:d\u0005G]d\u001f���WK�s��s��<\u000e�[\f\u000f�V�tB��)?���\u0016��0_!��!�\u0019�4�E�ǩ\u0019y���\u001fPK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000xl/worksheets/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�WJgA|�\u0001\u0000\u0000\u0005\u0004\u0000\u0000\u0018\u0000\u0000\u0000xl/worksheets/sheet1.xml���o� \u0010���W �\u001b�4?\u001a�v�5�2i���Ӟ\t�1*p\bH��߅4����/\u0016w\u001f���P޿\u0018M��\u0007\u0005���(�DZ\u0001��ۊ�yZ��Q\u0012\"�\r�`eE�2���Sy\u0000�\u001c:)#A\u0001\u001b*���\nƂ��a\u0004NZ$-x�#�~˂�7��l�e3f����P��h@�*!� vF�x\u0016�R��N�pQ3�#r��睻\u0011`\u001cJl�V�D)1������Fc�/����v\n��\u001b%<\u0004h�\b�^\u000b}��-\u0018*�e����ԉ�mE\u001f�b�SV�i�*��ӓF�|��/8���v\u0011-�R\u0002������^jD\u0015͆�G�)�\n-��R\u0006���tz�ŒG^�\u001e\u000e\u0004\u0007��Ɏ�l̋�w�e��\u0014k\u0016��\u000f�\u0019S\u0001�}��l_�L���}�\u000f�c���l�g�C���&C���}��ِ��l~e\fǁ��|\u001c��\u001f�o�\rD�6�bN�?{��\u0011\\Z�/\u001b�\u0011�%��y�O�-%-@�\u0004��[Ɲ#�\u0015�8]��:��s\u0015�0��\u0001\u0002�t����b����\u000b���\u001a�x\u0007\u0004L�]�3��U�\t��&v��\u0014^�Щ\u0002v}��PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W]&���\u0000\u0000\u0000q\u0001\u0000\u0000\u0014\u0000\u0000\u0000xl/sharedStrings.xmlm��N\u00031\fD�|��;��\u0001!���V\\\u0011\b> l�n��Yb\u0007��\u0013@Hh�8�4�x��='x�ʱ�Ug�A\u0001�XB��UO����\nX<\u0005�\n�UGd�v'�Y�G���D�+�y�0{^�\u0019��]��K�u�y��\u0003O���>\u001f�\u000b�}$\u0005ci$V�\u001b��K�͏v��3�nJ�字�\u0018�\u0016g�����'�r\\��\t�\u0003�5��\u0017\\�m��\u0007�V\t\u0003\\�\u00125�\n���\u0017�OǴ$ϥ\u001c��K�2�o�>\u0000PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000xl/theme/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�Wv�0�!\u0006\u0000\u0000\u0019\u001f\u0000\u0000\u0013\u0000\u0000\u0000xl/theme/theme1.xml�YMo�6\u0018��W\u0010���R'�SĎ�nm� q;�HK�Ć\u0012\u0005�N���\u001e\u0007\f\u0018�\r�\f�m�a[�\u0016إ�5�:l\u001dп�Wև)�j�&�P 98\"�<�\u0017��%i_�q\u001c2tH��<�X��5\u000b���\u001e���u8�Ҷ�T8�0�\u0011�XS\"�\u001b�\u001f]�\u001b* !A@��\u0006�X�R�mK\u0017����c\u0012��1\u0017!V0\u0014��\t|\u0004bCf7j�5;�4�P�C�zo<�.A�D���r�}\u0006\u001f���\u0019��}w�S�h�>�/���\u0004:Ĭc�.�\u001f\rɱ�\u0010�R���U��Y6��9��*�F\u001d��rjN�\u000e\u001a)U���[\u001f�֯mϵ42-\u0006h�����s�)\u0004�.�]_��\u0006�z�����g��^ͩ�\u0016(���2e���:�eJS���)��Zk�Q��4�c��뭕)�FY[�\f����\u0016(),`4:X&$�=_�9h��-3�\r�v�!\u001a��R0�\u0011�ʌ\f�#.\u0006�H�\u001e+\u001a!5��\u0018����p$(�i�\u001b\u0004k��9W.�%\n�t\u0005�U��$�P>s̛�?�y�\u001c�y����ǿ�\n        <yr��\u0017\u0013�\u0016�|����/���3����_?��� u�\u001f?��o_U ��|�ͳ?_<{��\u0017��Ԅ�\u0012x��4$\u0012�%Gh����I\u0005\u0019�3R�\u0001�%\n\u000e\u0000jB�UPBޝbf\u0004vI9�\u000f\u0004�\u000b#���Q���@L\u00145!o\u0007a\t��9�ra��v�N�i\u0012�\u0015��D\u0007�a|hT�[X��$�ܦF����L�e���'\u0011Q(y�\u000f\b1�\u001eRZ��\u000eu\u0005�|��C����\u00033�#efݢ!,��h#�z)B;\u000fP�3��mrX�B�`f\u0014JX)�7�D��l5\u000e�\u000e��U`4t*�RूE�\t��\u0011)��{bZ2�6�6e΀\u001d6\r�P��\u0011z\u0007s�C��A/�al��F�\u000e�X\u001e@�b�˕�\u000e^��d\f\u000b���@�:c�ߧ~`N���D\u0018k��r�N�\u0018�(�\u0004ʽ<��[;;���/;�Bg߂��XQ���\u0012��v�m<�v\tT�e\u0013�l�M�m\u0015�>Z�֬m�ȞJ\n�\u000f�c�ؾ�2rG��^���\u0000f�ьW�\u001a�\u0000\u001es�e�/�l�\u0004W�R\u0015�\u00078\u0006]�T�/s��D1�pe��\u0015�Wc\n��&��2\u000bx�v���7K��BR:�eI]3\u0011����󫬧ؕu֝\n��i:m=�P[\b'_k��\u001a�\u0005�E�\u0011/Y�LH�X�{��5}�\u0002�\u0011Ӽ�k�����і��{�\u0010w�P{,Z\u0018�����4\u001c\u000b�8�Xc8��c\u0018�L�4(���c�*�u��]�~�\"��5�����XH��e�\u0012g�/z\"͑��J�rQ�\u0018�Ъ�4����\u0016{i��xL\\U5���|���\u000f�#4b\u0013����V�z\u001e��m4��oeYY.�\u0016�N�+\u000b�8�YA���H\t頰#\u001d�F�U>��O�\u000b�ɹ�)��]8\u00137�ٳ\u000b\u0007\u0005�Q��\u001d�\u000b\u0015ph]q@݁��E�\u0011�CP:�i�%_�'6�C�ݥR���\u0007j��HPh�*\u0010�������\u001b�]7\u0017�����2�\u001eF䐰aR�kI0,\u0014��'�J�\\ZH�X�#�\u0001\u001c�Z／�յζ����C�T��o�j����Q�~�y�N����p�A�\u0007�\u0000T�L;'\u000f�\u001ed\u0006*�\u0012\br�J;+�br\u0004��u?\u0013a����]�\t\u0017~z��߬���J�\u0013�\u0010~���ۆ����R:\\�q��\u001e�\u0005�p\t��lJ�0̞vE���{���ɴ�d�)6\b\u0016�1��q��\u000bQ�~��\u001f\u0019�2=I(\nns\u0015n��6���X�_p6�i���<�2��?ed\u00190o��ر��Q\\ɓ�(��|�(����\u0014Eu|j\u0014�����$�J�^��\u001e���%��PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W\u0005;�^v\u0002\u0000\u0000\u0003\u0006\u0000\u0000\r\u0000\u0000\u0000xl/styles.xml��]o�0\u0014���+,�S\u0003\r,��ji�T��*5�v�I��\u0003\u0019ӑM��;\u0006\u0012\u0012uڦ��ǯ����3��@/�4\\�\u0014\u0007W>FL\u0015��j�⯛ܛc�X�J*�b)>�\u0006�d\u001f��\u001e\u0004{�3f\u0011\u0010T�⽵�����3I�+]3\u0005#�6�Z�\u001dij�hٸIR���c\")Wx ,e�?\u0010I�s[{��5�|�\u0005�����,��;�\r�\np�\u00053Z�.�Mx��K��H^\u0018���^\u0001���\u0005{�uA\u0016�\u0016\u0013\t�o#\u0005\u0011��a�YRie\u001bT�VY�}�;��g����\r9q�ʒB\u000bm��R��\u0004t*�8�\u0017*R\u001c:�7�\u0006Ar؊^�1\bA?G�c�-\u0015|k�\u0013�P�o\u001a�r!N�B<\bY\u0002\u001bn�Q9t�\u0018o\u000e5�Qp5\u0006L���읡� ��&�\r��jS�U���(e�`��\t������&n�Z��,)9�iE�C\u001eg�\u0001`\u000b&ē��ߪ\u000bvW!��\\��2�p���!\u0018\u001a�\u00013t\u001c��6�ߍE]u�?��B\u0017����I���{\u001bbB�m˅��\u000f��Yv��~Ժ�rY\u0005\u0018%�h+��4��)��J�����_�\u001d�����T\u0010�\u001a��\u000f��[�\u001a��w����]\u001ezs5�f�,�\u0016�j�E���z�/�п�u�j��fǇ\u0006�e# ˌ�\u001d�?MZ��:��~�����E\u0018������k?�f1�{��:��(\b��lu\u0017�љ�荿�O�`2\u001f--�Lp�.�o�U8$��e\u0011�x\u0012d����PK\u0003\u0004\n\u0000\u0000\u0000\u0000\u0000\r@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000docProps/PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\f@�W_m�\u0002�\u0001\u0000\u0000'\u0003\u0000\u0000\u0010\u0000\u0000\u0000docProps/app.xml��Ao�0\f���\u0015�n(�@V1�\u001bzX�\u0000I�3+ӱPY\u0012D�K��';��;��H><��n\u000f�+zLd���rQ�\u0002�\t���J<�]}\u0016\u00051�\u001a\\�X�#���\u001f�&���-R�\u0013\n            <U�e�+)ɴ�\u0001-���I\u0013R\u0007�˴��i���`^;�,���F���X_�)P�\u0012W=�oh\u001d��GO�c�yZ}��Y\u0003�R?X�\u0002����\u0007�N��P�-��d��K%��\u001ap����\u0001G��[C�#\f;ۀM�Uϫ\u001e\r�T����v-�g \u001cp*�C��Y�l�b�.\u0012'�3�\u0017j\u0011������{��~��ѐťQN Y_\"�,;�\u001f�\u0006\u0012��x9'\u001e\u0019Č�9�\u0014~�������\u000e]\u0004��('�\u0000\u001e�8x'���\u0017z��p\u0007��-_6ն��u~��\u0015���ϸ�\r�u\u000b~����~0�������fQ~,��\u0014�=%�N\\�\u0001PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\r@�WsK�B^\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000docProps/core.xml�R�N�0\u0010��\u0015�禎\u0014�\u0012��\u0004�'*!Q\u0004�f�mk�ؖ�%���<���'n;;��}8[\u001c�\"�\u0001�Vs\u0012O\"\u0012��ZH�����2���!S�\u0015Z�����\"�ɸI���b�\u0001�\u0012\\���K���\u001d�I)u|\u0007%s\u0013�P��h[2��n�a|϶@�(��% \u0013\f\u0019m\fC38��R���\u001cl�\u001a\bN��\u0012\u0014:\u001aOb:j\u0011l�\u0016�̙��X\u001b�*=����� ��jRM[��?�\u001f���v�P�fU\u001cH�\t�r\u000b\f����^�Je�,��(���M������\u001b8v�\u0001�X��V\u001a�w�ȋ�?�\u001e�J[�<{��K1���uG�ȃ�9\\�so$��z��/����f\u0000\u0011����\u0006O����i�$y\u0012%�0N��~\u001d��(J��Ϧ��Ѱ�\u001f���ɠ���_�PK\u0003\u0004\n\u0000\u0000\u0000\b\u0000\r@�Wa��\u0005\\\u0001\u0000\u0000u\u0002\u0000\u0000\u000f\u0000\u0000\u0000xl/workbook.xml���N�0\f��\n                <E�;k�\u0006�i-\u0012\u0002�]\u0010\u0007����\u0016-�#'����+\u0012څK\u0012����q֏�Ί\u0003P4�KY�r)�kl�ߖ�����^���o�E\u000f�\n                    <A��������\u0011���},�.��ʲ�w�T�a\u0000ϑ\u0016ɩ�&m�\u0018\bT\u0013w\u0000���&��2���#aE�a`�\u001a\rϨ;\u0007>�\u0010\u0002�\u0012��;\u0013�Ds�?8�h߅k�.0�6֤�\u0000����f�Tm����v\"��\u0002�&�ئ\u0019��\"/�-�(Ɩ�uk,|��.T\bo��U�\u0014V��Ҙ\u0004M)���#�qP\u0017�:c�x��s�U��x'�@�:�>X�D��-򢐂K&�w2\u0007�O��s\u0007u�a�4}L�AQ�Dx�\u0010�_��u0�𛰒�᫴i\u0016=)�PZY�R�m@-��f9ܘ�V?PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W���\tY\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0001\u0000\u0000_rels/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W�I��\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0001\u0000\u0000_rels/.relsPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0002\u0000\u0000xl/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0002\u0000\u0000xl/_rels/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0003\u0000\u0000xl/_rels/workbook.xml.relsPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000)\u0004\u0000\u0000xl/worksheets/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�WJgA|�\u0001\u0000\u0000\u0005\u0004\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000U\u0004\u0000\u0000xl/worksheets/sheet1.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W]&���\u0000\u0000\u0000q\u0001\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000w\u0006\u0000\u0000xl/sharedStrings.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\f@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0007\u0000\u0000xl/theme/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�Wv�0�!\u0006\u0000\u0000\u0019\u001f\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0007\u0000\u0000xl/theme/theme1.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W\u0005;�^v\u0002\u0000\u0000\u0003\u0006\u0000\u0000\r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\r\u0000\u0000xl/styles.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\u0000\u0000\r@�W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0010\u0000\u0000docProps/PK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\f@�W_m�\u0002�\u0001\u0000\u0000'\u0003\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0010\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\r@�WsK�B^\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000s\u0012\u0000\u0000docProps/core.xmlPK\u0001\u0002\u0014\u0000\n\u0000\u0000\u0000\b\u0000\r@�Wa��\u0005\\\u0001\u0000\u0000u\u0002\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0014\u0000\u0000xl/workbook.xmlPK\u0005\u0006\u0000\u0000\u0000\u0000\u0010\u0000\u0010\u0000�\u0003\u0000\u0000�\u0015\u0000\u0000\u0000\u0000"
+						}
+					]
 				}
 			]
 		},
@@ -3944,6 +4478,14 @@
 		{
 			"key": "authToken",
 			"value": ""
+		},
+		{
+			"key": "todayTimestamp",
+			"value": "1702107821"
+		},
+		{
+			"key": "timestampLastMonth",
+			"value": "1699508620"
 		}
 	]
 }
